@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]) {
@@ -6,7 +6,7 @@ int main(int argc, char* argv[]) {
 
 	system("pause");
 
-	long long long int a = 123;
+	unsigned long long int a = 123;
 
 	return 0;
 }

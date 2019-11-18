@@ -1,11 +1,11 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 
 void test(void) {
-	//Êä³ö Hello World!
+	//è¾“å‡º Hello World!
 
-	/*Êä³ö Hello World!
-	Êä³ö Hello World!
+	/*è¾“å‡º Hello World!
+	è¾“å‡º Hello World!
 	*/
 
 	printf("Hello World!");
