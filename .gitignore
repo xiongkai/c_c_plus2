@@ -1,4 +1,2 @@
-/Debug
-*.opensdf
-/.vs
-/c_c_plus2/Debug
+/c_learning/.idea
+/c_learning/cmake-build-debug
