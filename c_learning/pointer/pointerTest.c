@@ -14,12 +14,19 @@ void pointerTest(){
     printf("%d\n", sizeof(int *[2]));
     printf("%d\n", sizeof(int (*)[2]));
 
-    int *p[3];
-    int a[3][4];
-    printf("%p\n", p);
-    printf("%p\n", p[0]);
-    printf("%p\n", *p);
-    int *p_p = p + 1;             //该语句表示p数组指向下一个数组元素。注：此数组每一个元素都是一个指针
-    for(int i=0;i<3;i++)
-        p[i]=a[i];
+    /*int *p_a = NULL;
+    printf("%p %d\n", p_a, p_a == 0);*/
+
+    double double_a = 1.1;
+    int *p_a = &double_a;
+
+    printf("%f\n", *p_a);
+
+    int int_a = 1000;
+
+    p_a = &int_a;
+
+    printf("int_a = %d\n", *p_a);
+    *p_a = 2000;
+    printf("int_a = %d\n", *p_a);
 }

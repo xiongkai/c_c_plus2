@@ -9,7 +9,7 @@ void floatTest();
 void operatorsTest();
 void loopTest();
 void conditionTest();
-void arrayTest();
+void arrayPointTest();
 
 int main(int argc, char* argv[]) {
 	printf("Hello World!\n");
@@ -156,7 +156,7 @@ void conditionTest(){
     }
 }
 
-void arrayTest(){
+void arrayPointTest(){
     int arr_a[2] = {1};
     printf("arr_a[0] = %d, arr_a[1] = %d\n", arr_a[0], arr_a[1]);
 

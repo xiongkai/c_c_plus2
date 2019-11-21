@@ -34,11 +34,16 @@ void arrayTest(){
     printf("arr_aa[0] = %p\n", arr_aa[0]);
     printf("arr_aa[0][0] = %p\n", &arr_aa[0][0]);
     printf("---------------\n");
-    int arr_aa_a[2] = arr_aa[0];
-    int *ppp[2] = (int (*)[2])&arr_aa[0];
+
     printf("int (*)[2] size = %d\n", sizeof(int (*)[2]));
     printf("arr_aa + 1 = %p\n", arr_aa + 1);
     printf("arr_aa[0] + 1 = %p\n", arr_aa[0] + 1);
     printf("&arr_aa + 1 = %p\n", &arr_aa + 1);
     printf("&arr_aa[0] + 1 = %p\n", &arr_aa[0] + 1);
+    printf("---------------\n");
+
+    int arr_d[2] = {1, 2};
+    int arr_c[2] = {3, 4};
+    *arr_d = &arr_a;
+    printf("%d %d\n", arr_d[0], arr_d[1]);
 }
