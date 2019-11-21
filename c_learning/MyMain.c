@@ -2,11 +2,14 @@
 #include <stdlib.h>
 #include "array/arrayTest.h"
 
+#include "pointer/pointerTest.h"
+
 void intTest();
 void floatTest();
 void operatorsTest();
 void loopTest();
 void conditionTest();
+void arrayTest();
 
 int main(int argc, char* argv[]) {
 	printf("Hello World!\n");
@@ -35,6 +38,9 @@ int main(int argc, char* argv[]) {
 
     arrayTest();
 
+    printf("---------------------pointerTest--------------------------\n");
+
+    pointerTest();
 	//system("pause");
 	return 0;
 }
@@ -148,4 +154,21 @@ void conditionTest(){
 
             break;
     }
+}
+
+void arrayTest(){
+    int arr_a[2] = {1};
+    printf("arr_a[0] = %d, arr_a[1] = %d\n", arr_a[0], arr_a[1]);
+
+    int arr_aa[2][2];
+
+    printf("arr_aa[0][0] = %d, arr_aa[0][1] = %d\n", arr_aa[0][0], arr_aa[0][1]);
+    printf("arr_aa[1][0] = %d, arr_aa[1][1] = %d\n", arr_aa[1][0], arr_aa[1][1]);
+
+    int *arr_aa_p = (int *)&arr_aa;
+    printf("arr_aa = %p &arr_aa = %p\n", arr_aa, &arr_aa);
+    printf("arr_aa_p = %p\n", arr_aa_p);
+
+    int *arr_aa_0 = (int *)&arr_aa[0];
+    printf("arr_aa_0 = %p\n", arr_aa_0);
 }
