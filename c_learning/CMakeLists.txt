@@ -3,4 +3,4 @@ project(c_learning C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(c_learning MyMain.c)
+add_executable(c_learning MyMain.c pointer/pointerTest.h pointer/pointerTest.c)

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "pointer/pointerTest.h"
+
 void intTest();
 void floatTest();
 void operatorsTest();
@@ -34,6 +36,10 @@ int main(int argc, char* argv[]) {
     printf("---------------------arrayTest--------------------------\n");
 
     arrayTest();
+
+    printf("---------------------pointerTest--------------------------\n");
+
+    pointerTest();
 
 	//system("pause");
 	return 0;
