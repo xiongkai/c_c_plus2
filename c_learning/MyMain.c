@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "array/arrayTest.h"
 
 void intTest();
 void floatTest();
@@ -29,6 +30,10 @@ int main(int argc, char* argv[]) {
     printf("---------------------conditionTest--------------------------\n");
 
     conditionTest();
+
+    printf("---------------------arrayTest--------------------------\n");
+
+    arrayTest();
 
 	//system("pause");
 	return 0;
