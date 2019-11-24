@@ -4,6 +4,8 @@
 
 #include "pointer/pointerTest.h"
 
+#include "alloc/allocTest.h"
+
 void intTest();
 void floatTest();
 void operatorsTest();
@@ -41,6 +43,10 @@ int main(int argc, char* argv[]) {
     printf("---------------------pointerTest--------------------------\n");
 
     pointerTest();
+
+    printf("---------------------allocTest--------------------------\n");
+
+    allocTest();
 	//system("pause");
 	return 0;
 }

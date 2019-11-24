@@ -46,4 +46,21 @@ void arrayTest(){
     int arr_c[2] = {3, 4};
     *arr_d = &arr_a;
     printf("%d %d\n", arr_d[0], arr_d[1]);
+
+    int a[10] = {1,2 ,3, 4, 5, 6, 7, 8, 9, 10};
+    int *p = &a[0];
+    printf("%d %d\n", *(p + 1 + 2), p[1]);
+
+    int aaa[] = {1, 2, 3};
+
+    int* p_aaa[] = {&aaa[0], &aaa[1], &aaa[2]};
+
+    printf("%p  %p  %p  %p\n", &aaa[0], &p_aaa[0], p_aaa, *p_aaa);
+
+    int arr_f[2] = {1, 2};
+    int *p_b[2] = {arr_f, arr_f};
+
+    int (*p_c)[2] = &arr_f;
+
+    printf("***********%d\n", sizeof(int (*)[2]));
 }
