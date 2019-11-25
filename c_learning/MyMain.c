@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "array/arrayTest.h"
-
 #include "pointer/pointerTest.h"
-
 #include "alloc/allocTest.h"
+#include "function/funcTest.h"
 
 void intTest();
 void floatTest();
@@ -36,6 +35,10 @@ int main(int argc, char* argv[]) {
 
     conditionTest();
 
+    printf("---------------------arrayPointTest--------------------------\n");
+
+    arrayPointTest();
+
     printf("---------------------arrayTest--------------------------\n");
 
     arrayTest();
@@ -47,6 +50,10 @@ int main(int argc, char* argv[]) {
     printf("---------------------allocTest--------------------------\n");
 
     allocTest();
+
+    printf("---------------------funcTest--------------------------\n");
+
+    functionTest();
 	//system("pause");
 	return 0;
 }

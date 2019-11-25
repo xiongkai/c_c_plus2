@@ -19,8 +19,29 @@ int max(int num1, int num2)
 
     return result;
 }
+int min(int num1, int num2)
+{
+    /* 局部变量声明 */
+    int result;
 
-void funcTest(){
-    return 0;
+    if (num1 > num2)
+        result = num2;
+    else
+        result = num1;
+
+    return result;
+}
+
+void functionTest(){
+    int max_a = max(1, 2);
+    printf("max_a = %d\n", max_a);
+    int (*func_a)(int, int) = &max;
+    printf("max = %p func_a = %p\n", max, func_a);
+    max_a = func_a(1, 2);
+    printf("max_a = %d\n", max_a);
+
+    func_a = &min;
+    max_a = func_a(1, 2);
+    printf("max_a = %d\n", max_a);
 }
 

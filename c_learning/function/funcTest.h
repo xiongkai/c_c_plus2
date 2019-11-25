@@ -4,5 +4,5 @@
 
 #ifndef C_LEARNING_FUNCTEST_H
 #define C_LEARNING_FUNCTEST_H
-void funcTest();
+void functionTest();
 #endif //C_LEARNING_FUNCTEST_H
