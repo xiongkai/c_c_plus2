@@ -5,6 +5,7 @@
 #include "alloc/allocTest.h"
 #include "function/funcTest.h"
 #include "function/funcTest2.h"
+#include "string/stringTest.h"
 
 void intTest();
 void floatTest();
@@ -59,6 +60,10 @@ int main(int argc, char* argv[]) {
     printf("---------------------funcTest2--------------------------\n");
 
     functionTest2();
+
+    printf("---------------------stringTest--------------------------\n");
+
+    stringTest();
 	//system("pause");
 	return 0;
 }
