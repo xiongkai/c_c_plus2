@@ -51,7 +51,7 @@ int main(int argc, char* argv[]) {
 
     allocTest();
 
-    printf("---------------------funcTest--------------------------\n");
+    printf("---------------------functionTest--------------------------\n");
 
     functionTest();
 	//system("pause");
