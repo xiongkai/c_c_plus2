@@ -6,6 +6,7 @@
 #include "function/funcTest.h"
 #include "function/funcTest2.h"
 #include "string/stringTest.h"
+#include "struct/structTest.h"
 
 void intTest();
 void floatTest();
@@ -64,6 +65,10 @@ int main(int argc, char* argv[]) {
     printf("---------------------stringTest--------------------------\n");
 
     stringTest();
+
+    printf("---------------------structTest--------------------------\n");
+
+    structTest();
 	//system("pause");
 	return 0;
 }

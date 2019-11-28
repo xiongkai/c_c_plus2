@@ -66,16 +66,22 @@ void _stringTest(){
     }else{
         printf("str1 等于 str2\n");
     }
+
+    char str_a[30] = "20.30300 This is test";
+    char *ptr;
+    double ret_a = strtod(str_a, &ptr);
+    printf("数字（double）是：%lf\n", ret_a);
+    printf("字符串部分是：%s\n", ptr);
 }
 
 void convertString(){
-char str[20];
-strcpy(str, "98993489");
-int val = atoi(str);
-printf("字符串值 = %s, 整型值 = %d\n", str, val);
-strcpy(str, "runoob.com");
-val = atoi(str);
-printf("字符串值 = %s, 整型值 = %d\n", str, val);
+    char str[20];
+    strcpy(str, "98993489");
+    int val = atoi(str);
+    printf("字符串值 = %s, 整型值 = %d\n", str, val);
+    strcpy(str, "runoob.com");
+    val = atoi(str);
+    printf("字符串值 = %s, 整型值 = %d\n", str, val);
 }
 
 void stringTest(){
