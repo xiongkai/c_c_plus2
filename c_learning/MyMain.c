@@ -7,6 +7,7 @@
 #include "function/funcTest2.h"
 #include "string/stringTest.h"
 #include "struct/structTest.h"
+#include "union/unionTest.h"
 
 void intTest();
 void floatTest();
@@ -17,58 +18,34 @@ void arrayPointTest();
 
 int main(int argc, char* argv[]) {
 	printf("Hello World!\n");
-
     printf("---------------------intTest--------------------------\n");
-
 	intTest();
-
 	printf("---------------------floatTest--------------------------\n");
-
 	floatTest();
-
     printf("---------------------operatorsTest--------------------------\n");
-
     operatorsTest();
-
     printf("---------------------loopTest--------------------------\n");
-
     loopTest();
-
     printf("---------------------conditionTest--------------------------\n");
-
     conditionTest();
-
     printf("---------------------arrayPointTest--------------------------\n");
-
     arrayPointTest();
-
     printf("---------------------arrayTest--------------------------\n");
-
     arrayTest();
-
     printf("---------------------pointerTest--------------------------\n");
-
     pointerTest();
-
     printf("---------------------allocTest--------------------------\n");
-
     allocTest();
-
     printf("---------------------functionTest--------------------------\n");
-
     functionTest();
-
     printf("---------------------funcTest2--------------------------\n");
-
     functionTest2();
-
     printf("---------------------stringTest--------------------------\n");
-
     stringTest();
-
     printf("---------------------structTest--------------------------\n");
-
     structTest();
+    printf("---------------------unionTest--------------------------\n");
+    unionTest();
 	//system("pause");
 	return 0;
 }

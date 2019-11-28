@@ -113,10 +113,15 @@ void structTest(){
         struct {
             char name[10];
             int age;
+            struct {
+                char name2[10];
+                char age2;
+            } test;
         } user;
         printf("user size = %d\n", sizeof(user));
         printf("user.name size = %d\n", sizeof(user.name));
         printf("user.age size = %d\n", sizeof(user.age));
+        printf("user.test size = %d\n", sizeof(user.test));
 
         printf("user address = %d\n", &user);
         printf("user.name address = %d\n", &(user.name));
