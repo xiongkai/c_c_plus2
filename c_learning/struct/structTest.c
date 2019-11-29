@@ -112,19 +112,32 @@ void structTest(){
     {
         struct {
             char name[10];
+            char sex;
             int age;
-            struct {
-                char name2[10];
-                char age2;
-            } test;
         } user;
-        printf("user size = %d\n", sizeof(user));
-        printf("user.name size = %d\n", sizeof(user.name));
-        printf("user.age size = %d\n", sizeof(user.age));
-        printf("user.test size = %d\n", sizeof(user.test));
+        printf("user size = %d\n", sizeof(user));           // user size = 16
+        printf("user.name size = %d\n", sizeof(user.name)); // user.name size = 10
+        printf("user.sex size = %d\n", sizeof(user.sex));   // user.name size = 1
+        printf("user.age size = %d\n", sizeof(user.age));   // user.age size = 4
+        printf("user address = %d\n", &user);               // user address = 6421360
+        printf("user.name address = %d\n", &(user.name));   // user.name address = 6421360
+        printf("user.sex address = %d\n", &(user.sex));     // user.name address = 6421360
+        printf("user.age address = %d\n", &(user.age));     // user.age address = 6421372
+    }
 
-        printf("user address = %d\n", &user);
-        printf("user.name address = %d\n", &(user.name));
-        printf("user.age address = %d\n", &(user.age));
+    {
+        struct {
+            char name[10];
+            int age;
+            char sex;
+        } user;
+        printf("user size = %d\n", sizeof(user));           // user size = 16
+        printf("user.name size = %d\n", sizeof(user.name)); // user.name size = 10
+        printf("user.sex size = %d\n", sizeof(user.sex));   // user.name size = 1
+        printf("user.age size = %d\n", sizeof(user.age));   // user.age size = 4
+        printf("user address = %d\n", &user);               // user address = 6421340
+        printf("user.name address = %d\n", &(user.name));   // user.name address = 6421340
+        printf("user.sex address = %d\n", &(user.sex));     // user.name address = 6421356
+        printf("user.age address = %d\n", &(user.age));     // user.age address = 6421352
     }
 }

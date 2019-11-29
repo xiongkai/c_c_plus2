@@ -8,6 +8,7 @@
 #include "string/stringTest.h"
 #include "struct/structTest.h"
 #include "union/unionTest.h"
+#include "enum/enumTest.h"
 
 void intTest();
 void floatTest();
@@ -46,6 +47,8 @@ int main(int argc, char* argv[]) {
     structTest();
     printf("---------------------unionTest--------------------------\n");
     unionTest();
+    printf("---------------------enumTest--------------------------\n");
+    enumTest();
 	//system("pause");
 	return 0;
 }
