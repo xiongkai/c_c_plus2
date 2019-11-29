@@ -140,4 +140,16 @@ void structTest(){
         printf("user.sex address = %d\n", &(user.sex));     // user.name address = 6421356
         printf("user.age address = %d\n", &(user.age));     // user.age address = 6421352
     }
+    {
+        struct packed_struct {
+            unsigned int f1:8;
+            unsigned int f2:8;
+            unsigned int f3:8;
+            unsigned int f4:8;
+            unsigned int type:3;
+            unsigned int my_int:9;
+        } pack;
+
+        printf("pack size = %d\n", sizeof(pack));
+    }
 }

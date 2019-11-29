@@ -9,6 +9,7 @@
 #include "struct/structTest.h"
 #include "union/unionTest.h"
 #include "enum/enumTest.h"
+#include "type_convert/typeConvertTest.h"
 
 void intTest();
 void floatTest();
@@ -49,6 +50,8 @@ int main(int argc, char* argv[]) {
     unionTest();
     printf("---------------------enumTest--------------------------\n");
     enumTest();
+    printf("---------------------typeConvertTest--------------------------\n");
+    typeConvertTest();
 	//system("pause");
 	return 0;
 }
