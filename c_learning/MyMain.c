@@ -10,6 +10,8 @@
 #include "union/unionTest.h"
 #include "enum/enumTest.h"
 #include "type_convert/typeConvertTest.h"
+#include "typedef/typedefTest.h"
+#include "vars/varsTest.h"
 
 void intTest();
 void floatTest();
@@ -18,6 +20,7 @@ void loopTest();
 void conditionTest();
 void arrayPointTest();
 
+static int int_a = 1111;
 int main(int argc, char* argv[]) {
 	printf("Hello World!\n");
     printf("---------------------intTest--------------------------\n");
@@ -52,6 +55,11 @@ int main(int argc, char* argv[]) {
     enumTest();
     printf("---------------------typeConvertTest--------------------------\n");
     typeConvertTest();
+    printf("---------------------typedefTest--------------------------\n");
+    typedefTest();
+    printf("---------------------varsTest--------------------------\n");
+    varsTest();
+    printf("var_int_a = %d\n", int_a);
 	//system("pause");
 	return 0;
 }
