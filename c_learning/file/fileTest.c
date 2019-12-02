@@ -42,9 +42,36 @@ void fileTest(){
             perror ("打开文件错误");
             return;
         }
-        fseek(fp, 0, SEEK_SET);
+        fseek(fp, 0, SEEK_END);
         int len = ftell(fp);
         fclose(fp);
         printf("test.txt 的总大小 = %d 字节\n", len);
+    }
+    {
+        FILE *fp = fopen( "../file/test.txt" , "wb+" );
+        char str[] = "This is runoob.com";
+        fwrite(str, sizeof(str) , 1, fp );
+
+        fseek(fp, 0, SEEK_SET);
+        char buff[1024];
+        fread(buff, sizeof(str) , 1, fp);
+        printf("test.txt 内容为： %s\n", buff);
+        fclose(fp);
+    }
+    {
+        struct Student{
+            char name[20];
+            int age;
+        } stu = {"scott", 28};
+        FILE *fp = fopen( "../file/obj.txt" , "wb+" );
+        unsigned int write_len = fwrite(&stu, sizeof(struct Student) , 1, fp);
+        printf("write_len = %u\n", write_len);
+        fseek(fp, 0, SEEK_SET);
+        struct Student stu_read;
+        unsigned int read_len = fread(&stu_read, sizeof(struct Student) , 1, fp);
+        printf("read_len = %u\n", read_len);
+        printf("stu_read.name = %s\n", stu_read.name);
+        printf("stu_read.age = %d\n", stu_read.age);
+        fclose(fp);
     }
 }
