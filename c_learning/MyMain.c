@@ -12,6 +12,7 @@
 #include "type_convert/typeConvertTest.h"
 #include "typedef/typedefTest.h"
 #include "vars/varsTest.h"
+#include "file/fileTest.h"
 
 void intTest();
 void floatTest();
@@ -59,6 +60,8 @@ int main(int argc, char* argv[]) {
     typedefTest();
     printf("---------------------varsTest--------------------------\n");
     varsTest();
+    printf("---------------------fileTest--------------------------\n");
+    fileTest();
     printf("var_int_a = %d\n", int_a);
 	//system("pause");
 	return 0;
