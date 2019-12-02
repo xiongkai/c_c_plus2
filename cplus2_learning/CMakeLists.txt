@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
-project(c___learning)
+project(cplus2_learning)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(c___learning main.cpp)
+add_executable(cplus2_learning main.cpp)
