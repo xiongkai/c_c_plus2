@@ -1,0 +1,8 @@
+//
+// Created by Administrator on 2019/12/3 0003.
+//
+
+#ifndef CPLUS2_LEARNING_HELLO_
+#define CPLUS2_LEARNING_HELLO_
+void hello();
+#endif //CPLUS2_LEARNING_HELLO_

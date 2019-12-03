@@ -3,4 +3,4 @@ project(cplus2_learning)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cplus2_learning main.cpp)
+add_executable(cplus2_learning main.cpp hello hello.cpp namespace/namespaceA.h namespace/namesapceA.cpp namespace/namesapceB.cpp struct/structTest.h struct/structTest.cpp memory/memoryTest.h memory/memoryTest.cpp)
