@@ -9,11 +9,38 @@ void memoryTest(){
     struct Book {
         char name[50];
         char author[20];
+        Book(){
+            cout << "Book create" << endl;
+        }
+        ~Book(){
+            cout << "Book destroy" << endl;
+        }
     };
-    Book *book1 = new Book();
-    strcpy(book1->name, "è€äººä¸Žæµ·");
-    strcpy(book1->author, "æµ·æ˜Žå¨");
-    printf("%s  %s\n", book1->name, book1->author);
+    Book *book1 = new Book;
+    strcpy(book1->name, "ÀÏÈËÓëº£");
+    strcpy(book1->author, "º£Ã÷Íþ");
     cout << "book1->name = " << book1->name << endl;
     cout << "book1->author = " << book1->author << endl;
+    delete book1;
+
+    Book *books = new Book[5];
+    for(int i=0; i<5; i++){
+        Book *book = books + i;
+        strcpy(book->name, "ÀÏÈËÓëº£");
+        strcpy(book->author, "º£Ã÷Íþ");
+    }
+    delete [] books;
+
+    int **parr = new int *[2];
+
+    int *arr_1 = parr[0];
+    arr_1[0] = 123;
+    arr_1[1] = 234;
+    cout << "arr_1[0] = " << parr[0][0] << endl;
+    cout << "arr_1[1] = " << parr[0][1] << endl;
+
+    char *pvalue  = nullptr;   // ³õÊ¼»¯Îª null µÄÖ¸Õë
+    pvalue  = new char[20]; // Îª±äÁ¿ÇëÇóÄÚ´æ
+
+    int (*b)[2] = (int (*)[2])pvalue;
 }
