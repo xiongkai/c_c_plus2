@@ -23,6 +23,9 @@ void arrayPointTest();
 
 static int int_a = 1111;
 int main(int argc, char* argv[]) {
+    int a[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10 , 11, 12}};
+    int (*p)[4] = a;
+
 	printf("Hello World!\n");
     printf("---------------------intTest--------------------------\n");
 	intTest();
