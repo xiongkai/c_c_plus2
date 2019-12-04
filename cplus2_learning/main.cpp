@@ -6,6 +6,7 @@ using namespace std;
 using namespace namespaceA;
 using namespaceA::namesapceTest;
 using namespace namespaceA::namespaceA_Inner;
+#include "reference/referenceTest.h"
 
 #include "struct/structTest.h"
 #include "memory/memoryTest.h"
@@ -31,5 +32,7 @@ int main() {
     structTest();
     cout << "------------------memoryTest----------------------" << endl;
     memoryTest();
+    cout << "------------------referenceTest----------------------" << endl;
+    referenceTest();
     return 0;
 }

@@ -39,8 +39,8 @@ void memoryTest(){
     cout << "arr_1[0] = " << parr[0][0] << endl;
     cout << "arr_1[1] = " << parr[0][1] << endl;
 
-    char *pvalue  = nullptr;   // 初始化为 null 的指针
-    pvalue  = new char[20]; // 为变量请求内存
+    //char *pvalue  = nullptr;   // 初始化为 null 的指针
+    //pvalue  = new char[20]; // 为变量请求内存
 
-    int (*b)[2] = (int (*)[2])pvalue;
+    //int (*b)[2] = (int (*)[2])pvalue;
 }
