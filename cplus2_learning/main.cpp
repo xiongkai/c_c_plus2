@@ -10,6 +10,7 @@ using namespace namespaceA::namespaceA_Inner;
 
 #include "struct/structTest.h"
 #include "memory/memoryTest.h"
+#include "function/functionTest.h"
 
 void iostreamTest( ){
     char name[50], nickname[50];
@@ -34,5 +35,7 @@ int main() {
     memoryTest();
     cout << "------------------referenceTest----------------------" << endl;
     referenceTest();
+    cout << "------------------functionTest----------------------" << endl;
+    functionTest();
     return 0;
 }
