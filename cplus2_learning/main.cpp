@@ -11,6 +11,7 @@ using namespace namespaceA::namespaceA_Inner;
 #include "struct/structTest.h"
 #include "memory/memoryTest.h"
 #include "function/functionTest.h"
+#include "class/classTest.h"
 
 void iostreamTest( ){
     char name[50], nickname[50];
@@ -37,5 +38,7 @@ int main() {
     referenceTest();
     cout << "------------------functionTest----------------------" << endl;
     functionTest();
+    cout << "------------------classTest----------------------" << endl;
+    classTest();
     return 0;
 }

@@ -14,7 +14,7 @@ void defaultTest(int a, int b){
 void defaultTest(int a){
     cout<<"a="<<a<<endl;
 }
-
+/*
 void floatTest(float var){
     cout<<"float var="<<var<<endl;
 }
@@ -29,10 +29,10 @@ void integerTest(int var){
 
 void integerTest(long var){
     cout<<"long var="<<var<<endl;
-}
+}*/
 
 void functionTest(){
     defaultTest(1, 2);
-    floatTest(1.0f);
-    integerTest(1L);
+    //floatTest(1.0f);
+    //integerTest(1L);
 }
