@@ -12,6 +12,7 @@ using namespace namespaceA::namespaceA_Inner;
 #include "memory/memoryTest.h"
 #include "function/functionTest.h"
 #include "class/classTest.h"
+#include "operator/operatorTest.h"
 
 void iostreamTest( ){
     char name[50], nickname[50];
@@ -39,6 +40,8 @@ int main() {
     cout << "------------------functionTest----------------------" << endl;
     functionTest();
     cout << "------------------classTest----------------------" << endl;
-    classTest();
+    //classTest();
+    cout << "------------------operatorTest----------------------" << endl;
+    operatorTest();
     return 0;
 }
