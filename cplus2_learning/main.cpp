@@ -13,6 +13,8 @@ using namespace namespaceA::namespaceA_Inner;
 #include "function/functionTest.h"
 #include "class/classTest.h"
 #include "operator/operatorTest.h"
+#include "extends/extendsTest.h"
+#include "extends/overriedTest.h"
 
 void iostreamTest( ){
     char name[50], nickname[50];
@@ -43,5 +45,9 @@ int main() {
     //classTest();
     cout << "------------------operatorTest----------------------" << endl;
     operatorTest();
+    cout << "------------------extendsTest----------------------" << endl;
+    extendsTest();
+    cout << "------------------overriedTest----------------------" << endl;
+    overriedTest();
     return 0;
 }
