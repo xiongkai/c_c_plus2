@@ -18,6 +18,7 @@ public:
 
 class SonTest:public FatherTest{ //Father类的派生类Son
 public:
+    SonTest():FatherTest(){};
     void show(){
         cout<<"Son show()"<<endl;
     }
@@ -31,6 +32,10 @@ void overriedTest(){
     son.show();
     FatherTest son1 = SonTest();
     son1.show();
-    FatherTest *son2 = new SonTest();
-    son2->show();
+    FatherTest &son2 = son;
+    son2.show();
+    FatherTest *son3 = &son;
+    son3->show();
+    FatherTest *son4 = new SonTest();
+    son4->show();
 }
