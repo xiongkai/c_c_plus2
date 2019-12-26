@@ -42,7 +42,7 @@ int main() {
     cout << "------------------functionTest----------------------" << endl;
     functionTest();
     cout << "------------------classTest----------------------" << endl;
-    //classTest();
+    classTest();
     cout << "------------------operatorTest----------------------" << endl;
     operatorTest();
     cout << "------------------extendsTest----------------------" << endl;
