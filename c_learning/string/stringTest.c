@@ -80,7 +80,8 @@ void convertString(){
     int val = atoi(str);
     printf("字符串值 = %s, 整型值 = %d\n", str, val);
     strcpy(str, "runoob.com");
-    val = atoi(str);
+    char str2[] = "11.1";
+    val = atoi(str2);
     printf("字符串值 = %s, 整型值 = %d\n", str, val);
 }
 

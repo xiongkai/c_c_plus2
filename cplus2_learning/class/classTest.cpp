@@ -14,11 +14,13 @@ public:                               // 声明三个公开的成员
     Line(double len);
 private:                              // 声明一个私有的成员
     double width;
+    char extra;
 public:                               // 声明一个公开的成员
     void setWidth(double wid);
     double getWidth();
 private:
     void print();
+    virtual void test(){}
 };
 Line::Line() {
 
@@ -119,4 +121,6 @@ void classTest(){
     cout<<"length = "<<line.length<<endl;      // 直接访问length。length = 10.0
     // box.width = 10.0; // Error: width是私有成员，不能直接访问，可以通过box.setWidth(10.0)设置
     cout << "width = " << line.getWidth() <<endl;// 使用成员函数获取width
+    cout << "line size = " << sizeof(line) <<endl;
+    cout << "double size = " << sizeof(double) <<endl;
 }

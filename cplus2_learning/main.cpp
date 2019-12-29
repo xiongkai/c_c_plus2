@@ -15,6 +15,9 @@ using namespace namespaceA::namespaceA_Inner;
 #include "operator/operatorTest.h"
 #include "extends/extendsTest.h"
 #include "extends/overriedTest.h"
+#include "except/exceptionTest.h"
+#include "innerClass/innerClassTest.h"
+#include "typeCast/typeCastTest.h"
 
 void iostreamTest( ){
     char name[50], nickname[50];
@@ -49,5 +52,11 @@ int main() {
     extendsTest();
     cout << "------------------overriedTest----------------------" << endl;
     overriedTest();
+    cout << "------------------exceptionTest----------------------" << endl;
+    exceptionTest();
+    cout << "------------------innerClassTest----------------------" << endl;
+    innerClassTest();
+    cout << "------------------typeCastTest----------------------" << endl;
+    typeCastTest();
     return 0;
 }

@@ -1,0 +1,8 @@
+//
+// Created by Administrator on 2019/12/29 0029.
+//
+
+#ifndef CPLUS2_LEARNING_INNERCLASSTEST_H
+#define CPLUS2_LEARNING_INNERCLASSTEST_H
+void innerClassTest();
+#endif //CPLUS2_LEARNING_INNERCLASSTEST_H
